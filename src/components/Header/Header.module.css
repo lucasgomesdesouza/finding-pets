@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: #FEFDF7;
+    font-family: Arial, sans-serif;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navigation {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+}
+
+.link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+.link a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link a:hover {
+    color: #E07628;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.icon {
+    font-size: 18px;
+}
+
+.iconButton:hover .icon {
+    color: #E07628;
+}

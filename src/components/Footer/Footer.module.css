@@ -1,0 +1,74 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: #9C9082;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.about {
+    max-width: 300px;
+}
+
+.logo {
+    height: 60px;
+    margin-bottom: 16px;
+}
+
+.about p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #F5F5F5;
+}
+
+.linksSection {
+    min-width: 150px;
+}
+
+.linksSection h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.linksSection ul {
+    list-style: none;
+    line-height: 24px;
+    padding: 0;
+}
+
+.linksSection ul li {
+    font-size: 14px;
+    color: #F5F5F5;
+    margin-bottom: 8px;
+}
+
+.linksSection ul li:hover {
+    color: #E07628;
+    cursor: pointer;
+}
+
+.socialMedia {
+    min-width: 150px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+}
+
+.socialIcons li {
+    list-style: none;
+}
+
+.icon {
+    font-size: 18px;
+    color: #F5F5F5;
+}
+
+.icon:hover {
+    color: #E07628;
+    cursor: pointer;
+}
