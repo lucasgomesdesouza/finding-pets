@@ -1,10 +1,11 @@
 import React from "react";
+import CareContenct from "../components/CareContent/CareContent";
 
 const Care = () => {
     return (
-        <div>
-            <h1>Bem Vindo ao cuidados</h1>
-        </div>
+        <main className="container">
+            <CareContenct/>
+        </main>
     );
 };
 
