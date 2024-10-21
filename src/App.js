@@ -5,6 +5,7 @@ import News from './pages/News';
 import Adopt from './pages/Adopt';
 import Care from './pages/Care';
 import Contact from './pages/Contact';
+import About from './pages/About';
 import './styles.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/adopt" element={<Adopt />} />
         <Route path="/care" element={<Care />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about-us" element={<About />} />
       </Routes>
       <Footer />
     </Router>

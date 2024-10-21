@@ -18,6 +18,7 @@ const Header = () => {
                     <li className={styles.link}><Link to="/adopt">Adote</Link></li>
                     <li className={styles.link}><Link to="/care">Cuidados</Link></li>
                     <li className={styles.link}><Link to="/contact">Contato</Link></li>
+                    <li className={styles.link}><Link to="/about-us">Sobre Nós</Link></li>
                 </ul>
             </nav>
             <div className={styles.icons}>

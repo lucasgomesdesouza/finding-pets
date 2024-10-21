@@ -1,0 +1,48 @@
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutTitleContent{
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutTitle {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.aboutDiscription {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.aboutTitleCard {
+    width: 955px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FAF7F2;
+    border-radius: 5px;
+    border: 1px solid #FE6B1B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.aboutContentTitle{
+    font-size: 24px;
+}
+
+.aboutContentSubscription {
+    font-size: 18px;
+}
