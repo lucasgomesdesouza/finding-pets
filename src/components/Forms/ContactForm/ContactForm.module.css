@@ -1,0 +1,113 @@
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactFormTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactTitle{
+  font-size: 40px;
+  margin-bottom: 8px
+}
+
+.contactDescription{
+  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.formContainer {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-right: 24px;
+  background-color: #FAF7F2;
+  border-radius: 5px;
+  border: 1px solid #FE6B1B;
+}
+
+.formForm {
+  width: 781px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #F28522;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: #FF8033;
+}
+
+textarea {
+  resize: none;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+}
+
+.formRow .formGroup {
+  flex: 1;
+}
+
+.formButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.formInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 40px 0px;
+}
+
+.formTitle{
+  font-size: 24px;
+}
+
+.formInformationContainer{
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-right: 24px;
+  background-color: #FAF7F2;
+  border-radius: 5px;
+  border: 1px solid #FE6B1B;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
