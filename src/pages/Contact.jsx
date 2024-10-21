@@ -1,10 +1,11 @@
 import React from "react";
+import ContactForm from "../components/Forms/ContactForm/ContactForm";
 
 const Contact = () => {
     return (
-        <div>
-            <h1>Bem Vindo ao contato</h1>
-        </div>
+        <main className="container">
+            <ContactForm/>
+        </main>
     );
 };
 
