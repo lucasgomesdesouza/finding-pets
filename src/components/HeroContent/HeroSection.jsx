@@ -1,23 +1,27 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import goldenRetriver from "../../assets/images/goldenzinho_ownt.png";
 import ButtonCallToAction from "../ButtonCallToAction/ButtonCallToAction";
 
-const HeroSection = () => {
+const HeroSection = ({image, title, description, alt, button = false}) => {
     return (
         <div className={styles.hero_section}>
             <div>
-                <img src={goldenRetriver} alt="Foto de um cão da raça golden retriever" />
+                <img src={image} alt={alt} />
             </div>
             <div>
-                <h2>O seu melhor amigo com um clique!</h2>
+                <h2>{title}</h2>
                 <p>
-                    Com responsabilidade e conforto, FindingPet te permite
-                    adotar o pet que você tanto procura diretamente da sua casa,
-                    um companheiro de quatro patas para sua vida.
+                    {description.split('\n').map((line, index) => (
+                        <React.Fragment key={index}>
+                            {line}
+                            <br />
+                        </React.Fragment>
+                    ))}
                 </p>
-                <ButtonCallToAction icon={faArrowRight} text="ADOTE"/>
+                {button == true ?(
+                <ButtonCallToAction icon={faArrowRight} text="ADOTE" isAdoptionPage = {false} />
+                ): null}
             </div>
         </div>
     );
