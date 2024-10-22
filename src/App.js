@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import News from './pages/News';
@@ -15,9 +15,22 @@ const App = () => {
   const location = useLocation();
   const hideHeaderAndFooter = location.pathname === '/sign-up';
 
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem('theme') === 'dark';
+  });
+
+  useEffect(() => {
+    document.body.classList.toggle('dark-mode', darkMode);
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <>
-      {!hideHeaderAndFooter && <Header />}
+      {!hideHeaderAndFooter && <Header toggleTheme={toggleTheme} darkMode={darkMode} />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<News />} />

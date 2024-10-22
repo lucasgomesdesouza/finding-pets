@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import logo from '../../assets/images/Logo.png';
 import styles from './Header.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faMoon, faSun, faUser } from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => {
+const Header = ({ toggleTheme, darkMode }) => {
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
@@ -25,8 +25,8 @@ const Header = () => {
                 <Link to="/sign-up" className={styles.iconButton}>
                     <FontAwesomeIcon icon={faUser} className={styles.icon} />
                 </Link>
-                <button type="button" className={styles.iconButton}>
-                    <FontAwesomeIcon icon={faMoon} className={styles.icon} />
+                <button type="button" onClick={toggleTheme} className={styles.iconButton}>
+                    <FontAwesomeIcon icon={darkMode ? faSun : faMoon} className={styles.icon} />
                 </button>
             </div>
         </header>
