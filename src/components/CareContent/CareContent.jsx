@@ -1,7 +1,7 @@
 import React from "react";
 import CareDogs from "../CareDogs/CareDogs";
 import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
-import styles from "./CareContenct.module.css"
+import styles from "./CareContent.module.css"
 import cachorro from "../../assets/images/cachorro.png"
 
 const CareContenct = () => {
@@ -14,9 +14,9 @@ const CareContenct = () => {
       ];
 
     return(
-        <div className={styles.careContenct}>
+        <div className={styles.careContent}>
             <div>
-                <h2 className={styles.careContenctTitle}>Cuidados para seu doguinho</h2>
+                <h2 className={styles.careContentTitle}>Cuidados para seu doguinho</h2>
             </div>
             <div>
                 <CareDogs

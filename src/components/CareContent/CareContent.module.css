@@ -1,11 +1,12 @@
-.careContenct{
+.careContent{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 40px;
+    padding-top: 20px;
 }
 
-.careContenctTitle{
-    font-size: 40px;
+.careContentTitle{
+    font-size: 50px;
 }

@@ -27,7 +27,7 @@ const CardSection = () => {
     ];
 
     return (
-        <div style={{ display: "flex", justifyContent: "space-between", paddingBottom: "80px", paddingTop: "80px" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", paddingBottom: "80px", paddingTop: "120px" }}>
             {cardsData.map((card, index) => (
                 <InfoCard
                     key={index}

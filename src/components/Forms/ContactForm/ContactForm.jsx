@@ -8,10 +8,6 @@ import { faFacebookF, faInstagram, faTwitter } from "@fortawesome/free-brands-sv
 const ContactForm = () => {
     return(
         <div className={styles.contactFormContainer}>
-            <div className={styles.contactFormTitle}>
-                <h2 className={styles.contactTitle}>Fale conosco</h2>
-                <p className={styles.contactDescription}>Estamos aqui para tirar suas dúvidas sobre adoção ou qualquer outra questão!</p>
-            </div>
             <div className={styles.formContainer}>
                 <form action="" className={styles.formForm}>
                     <div className={styles.formGroup}>
@@ -50,33 +46,33 @@ const ContactForm = () => {
                 <h3 className={styles.formTitle}>Informações Adicionais</h3>
                 <div className={styles.formInformationContainer}>
                     <InputInformation
-                        label={"Telefone para contato"}
+                        label={"Telefone para contato:"}
                         icon={faPhone}
                         text={"(11)XXXX-XXXX"}
                     />
                     <InputInformation
-                        label={"Telefone para contato"}
+                        label={"Siga-nos no Instagram:"}
                         icon={faInstagram}
                         text={"findingpet.sp"}
                     />
                     <InputInformation
-                        label={"Telefone para contato"}
+                        label={"Telefone para urgências:"}
                         icon={faPhoneVolume}
                         text={"(11)XXXX-XXXX"}
                         
                     />
                     <InputInformation
-                        label={"Telefone para contato"}
+                        label={"Veja as mais recentes adoções no X:"}
                         icon={faTwitter}
                         text={"findingpet.sp"}
                     />
                     <InputInformation
-                        label={"Telefone para contato"}
+                        label={"E-mail de contato:"}
                         icon={faEnvelope}
                         text={"findingpet@adote.com.br"}
                     />
                     <InputInformation
-                        label={"Telefone para contato"}
+                        label={"Acompanhe nossa publicações no Facebook:"}
                         icon={faFacebookF}
                         text={"Finding Pet - São Paulo"}
                     />

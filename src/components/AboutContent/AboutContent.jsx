@@ -4,10 +4,6 @@ import styles from "./AboutContent.module.css";
 const AboutContent = () => {
     return (
         <div className={styles.aboutContent}>
-            <div className={styles.aboutTitleContent}>
-                <h2 className={styles.aboutTitle}>Sobre nós</h2>
-                <p className={styles.aboutDiscription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat, ligula eu auctor sollicitudin, augue felis consequat sem, sed pharetra arcu turpis eu metus. Fusce finibus ut dui eget tincidunt. Vivamus bibendum at nisi at dapibus.</p>
-            </div>
             <div className={styles.aboutTitleCard}>
                 <div>
                     <h3 className={styles.aboutContentTitle}>Missão</h3>

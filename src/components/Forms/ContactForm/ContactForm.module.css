@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .contactFormTitle {
@@ -13,7 +14,7 @@
 }
 
 .contactTitle{
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 8px
 }
 
@@ -96,6 +97,7 @@ textarea {
 
 .formTitle{
   font-size: 24px;
+  color: black;
 }
 
 .formInformationContainer{
@@ -110,4 +112,8 @@ textarea {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.formInformationContainer label{
+  margin: 10px 0px 10px 0;
 }
