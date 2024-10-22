@@ -38,16 +38,16 @@
     align-items: center;
 }
 
-h1, h2 {
+.loginSectionTitle {
     margin-bottom: 20px;
-    font-size: 32px;
+    font-size: 29px;
 }
 
-h1 {
+.loginSection h1 {
     width: 300px;
 }
 
-p {
+.loginSectionDescription {
     margin-bottom: 30px;
     color: #fff;
     font-size: 16px;
@@ -71,6 +71,10 @@ p {
 .orText {
     text-align: center;
     color: #999;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .formForm {

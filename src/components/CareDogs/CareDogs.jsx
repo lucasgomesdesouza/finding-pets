@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./CareDogs.module.css";
 
-const CareDogs = ({ icon, texts, imgSrc, altText, side = "left" }) => {
+const CareDogs = ({ icon, texts, imgSrc, altText, side = "left"}) => {
   return (
     <div
       className={`${styles.careDogs} ${
