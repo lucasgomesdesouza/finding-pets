@@ -22,9 +22,9 @@ const Header = () => {
                 </ul>
             </nav>
             <div className={styles.icons}>
-                <button type="button" className={styles.iconButton}>
+                <Link to="/sign-up" className={styles.iconButton}>
                     <FontAwesomeIcon icon={faUser} className={styles.icon} />
-                </button>
+                </Link>
                 <button type="button" className={styles.iconButton}>
                     <FontAwesomeIcon icon={faMoon} className={styles.icon} />
                 </button>
