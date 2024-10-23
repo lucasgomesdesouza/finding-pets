@@ -39,10 +39,32 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-  }
+}
   
   .petImages img {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-  }
+}
+
+.textImage{
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width:1475px){
+    .testimonialCard{
+       width: 90vw;
+    }
+
+    .textImage{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .petImages{
+        grid-template-columns: repeat(2,1fr);
+        width: 0px;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,14 @@
+.cardSectionContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    padding-top: 120px;
+}
+
+@media(max-width:1475px){
+    .cardSectionContainer{
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+    }
+}

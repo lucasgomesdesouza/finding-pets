@@ -52,3 +52,16 @@ p {
 .link:hover {
     text-decoration: underline;
 }
+
+@media(max-width:880px){
+    .image{
+        display: none;
+    }
+}
+
+@media(max-width:1475px){
+    .card{
+       width: 20vw;
+    }
+
+}

@@ -7,11 +7,13 @@
     padding-bottom: 40px;
     flex-wrap: wrap;
     padding-top: 20px;
+    width: 100%
 }
 
 .hero_section img {
     border-radius: 8px;
     padding-right: 24px;
+    width: 30vw;
 }
 
 .hero_section h2 {
@@ -28,5 +30,22 @@
     line-height: 1.2;
     margin-bottom: 30px;
     text-align: justify;
-    width: 700px;
+    
+}
+
+@media(max-width:880px){
+    .hero_section img {
+        display: none;
+    }
+}
+@media(max-width:1024px){
+    .hero_section {
+        justify-self: center;
+    }
+    
+}
+@media(max-width:1475px){
+    .hero_section{
+       width: 90%;
+    }
 }

@@ -3,6 +3,7 @@ import InfoCard from "../InfoCard/InfoCard";
 import bulldogImage from "../../assets/images/bulldog.png";
 import jackRussellImage from "../../assets/images/jack_russell.png";
 import pinscherImage from "../../assets/images/pinscher.png";
+import styles from "./CardSection.module.css"
 
 const CardSection = () => {
     const cardsData = [
@@ -27,7 +28,7 @@ const CardSection = () => {
     ];
 
     return (
-        <div style={{ display: "flex", justifyContent: "space-between", paddingBottom: "80px", paddingTop: "120px" }}>
+        <div className={styles.cardSectionContainer}>
             {cardsData.map((card, index) => (
                 <InfoCard
                     key={index}
