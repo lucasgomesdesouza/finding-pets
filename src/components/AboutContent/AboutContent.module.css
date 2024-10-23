@@ -1,4 +1,4 @@
-.aboutContent{
+.aboutContent {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,28 +9,63 @@
 
 .aboutDiscription {
     font-size: 16px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 40px;
 }
 
 .aboutTitleCard {
-    width: 955px;
+    width: 100%;
+    max-width: 750px;
     margin: 0 auto;
     padding: 20px;
     background-color: #FAF7F2;
     border-radius: 5px;
     border: 1px solid #FE6B1B;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 80px;
 }
 
-.aboutContentTitle{
+.aboutContentTitle {
     font-size: 24px;
 }
 
 .aboutContentSubscription {
     font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .aboutTitleCard {
+        flex-direction: column;
+        align-items: center;
+        width: 430px !important;
+    }
+
+    .aboutContentTitle {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .aboutContentSubscription {
+        font-size: 16px;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutContentTitle {
+        font-size: 18px;
+    }
+
+    .aboutContentSubscription {
+        font-size: 14px;
+    }
+
+    .aboutTitleCard {
+        padding: 15px;
+        width: 430px !important;
+    }
 }

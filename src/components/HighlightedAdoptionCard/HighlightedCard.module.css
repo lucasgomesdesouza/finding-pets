@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    flex-wrap: wrap;
 }
 
 .highlighted_card .main_info h2{
@@ -40,7 +40,7 @@
 
 .highlighted_card .info{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: start;
@@ -74,4 +74,5 @@
     background-color: #FEFDF7;
     margin: 0 auto;
     width: 80%;
+    flex-wrap: wrap;
 }

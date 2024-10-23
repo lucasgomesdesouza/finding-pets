@@ -8,6 +8,7 @@
 
 .testimonialCard {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: start;
     background-color: #FEFDF7;
@@ -23,6 +24,7 @@
 
 .testimonialPersonData{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: start;
     justify-content: start;

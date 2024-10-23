@@ -6,6 +6,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw !important;
 }
 
 code {
@@ -15,6 +16,7 @@ code {
 
 .container {
   background-color: #F1AE5F4A;
+  width: 100vw !important;
 }
 
 .pages_content {

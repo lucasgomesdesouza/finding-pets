@@ -2,8 +2,7 @@
   display: flex;
   align-items: flex-start;
   padding: 20px 0;
-  position: relative;
-  padding: 50px 0px 50px 0px;
+  flex-direction: row;
 }
 
 .careDogsImage {
@@ -59,4 +58,38 @@
 .careDogsText {
   font-size: 16px;
   color: #333;
+}
+
+@media (max-width: 768px) {
+  .careDogs {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .careDogsImage {
+      margin: 0 0 20px 0;
+  }
+
+  .careDogsImage img {
+      width: 150px;
+  }
+
+  .careDogsContent {
+      text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .careDogsText {
+      font-size: 14px;
+  }
+
+  .careDogsIcon {
+      font-size: 18px;
+  }
+
+  .careDogsImage img {
+      width: 120px;
+  }
 }

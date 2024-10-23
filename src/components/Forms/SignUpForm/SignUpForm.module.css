@@ -4,52 +4,45 @@
     align-items: center;
     height: 100vh;
     background-color: #F1AE5F4A;
+    padding: 20px;
 }
 
 .container {
     display: flex;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
+    flex-direction: row;
+}
+
+.loginSection, .signupSection {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .loginSection {
     background-color: #a59383;
-    flex: 1;
-    padding: 40px;
-    text-align: left;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .signupSection {
     background-color: #fff;
-    flex: 1.2;
-    padding: 40px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.loginSectionTitle {
+.loginSectionTitle, .loginSection h1 {
     margin-bottom: 20px;
-    font-size: 29px;
-}
-
-.loginSection h1 {
-    width: 300px;
+    font-size: 24px;
 }
 
 .loginSectionDescription {
     margin-bottom: 30px;
-    color: #fff;
     font-size: 16px;
     text-align: center;
 }
@@ -65,7 +58,6 @@
     color: #a59383;
     font-size: 24px;
     cursor: pointer;
-    gap: 24px;
 }
 
 .orText {
@@ -82,12 +74,8 @@
     flex-direction: column;
     gap: 15px;
     margin-bottom: 20px;
-    align-self: flex-start;
-    width: 330px;
-}
-
-.formGroup {
-    position: relative;
+    width: 100%;
+    max-width: 330px;
 }
 
 .formGroup input {
@@ -99,10 +87,47 @@
     color: #333;
 }
 
-.formGroup input::placeholder {
-    color: #999;
-}
-
 .formButton {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .loginSection, .signupSection {
+        padding: 20px;
+    }
+
+    .loginSectionTitle, .loginSection h1 {
+        font-size: 20px;
+    }
+
+    .formForm {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginSectionTitle, .loginSection h1 {
+        font-size: 18px;
+    }
+
+    .socialIcon {
+        font-size: 20px;
+    }
+
+    .formForm {
+        width: 100%;
+        margin: 16px auto;
+        align-items: center;
+    }
+
+    .formGroup {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
 }

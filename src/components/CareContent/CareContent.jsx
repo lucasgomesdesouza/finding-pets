@@ -31,7 +31,7 @@ const CareContenct = () => {
                     texts={texts}
                     imgSrc={cachorro}
                     altText="Dog"
-                    side="right"
+                    side="left"
                 />
             </div>
         </div>

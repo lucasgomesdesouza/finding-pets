@@ -86,12 +86,14 @@ textarea {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .formInfos {
   display: flex;
   flex-direction: column;
   align-items: start;
+  flex-wrap: wrap;
   justify-content: start;
   padding: 40px 0px;
 }
