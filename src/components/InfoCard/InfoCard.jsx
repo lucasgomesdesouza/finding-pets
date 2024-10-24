@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const InfoCard = ({ imageSrc, title, description, linkText }) => {
     return (
-        <div className={styles.card}>
+        <div className={styles.card} id="conteinerCard">
             <div className={styles.imageContainer}>
                 <img src={imageSrc} alt={title} className={styles.image} />
             </div>

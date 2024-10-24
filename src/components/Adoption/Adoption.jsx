@@ -60,7 +60,7 @@ const Adoption = () => {
             <h1>Mais Adoções</h1>
             <div className={styles.cardContainer}>
                 {dogs.map((dog, index) => (
-                    <div key={index} className={styles.card}>
+                    <div key={index} className={styles.card} id="conteinerCard">
                         <img src={dog.image} alt={dog.alt} />
                         <h2>{dog.name}</h2>
                         <div className={styles.info}>

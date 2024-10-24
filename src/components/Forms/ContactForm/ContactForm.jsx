@@ -8,7 +8,7 @@ import { faFacebookF, faInstagram, faTwitter } from "@fortawesome/free-brands-sv
 const ContactForm = () => {
     return(
         <div className={styles.contactFormContainer}>
-            <div className={styles.formContainer}>
+            <div className={styles.formContainer} id="conteinerCard">
                 <form action="" className={styles.formForm}>
                     <div className={styles.formGroup}>
                         <label htmlFor="name">Nome:</label>
@@ -44,7 +44,7 @@ const ContactForm = () => {
 
             <div className={styles.formInfos}>
                 <h3 className={styles.formTitle}>Informações Adicionais</h3>
-                <div className={styles.formInformationContainer}>
+                <div className={styles.formInformationContainer} id="conteinerCard">
                     <InputInformation
                         label={"Telefone para contato:"}
                         icon={faPhone}

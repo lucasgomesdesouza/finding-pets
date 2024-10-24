@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import News from './pages/News';
@@ -15,9 +15,51 @@ const App = () => {
   const location = useLocation();
   const hideHeaderAndFooter = location.pathname === '/sign-up';
 
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setDarkMode(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    const applyDarkMode = (isDarkMode) => {
+      const header = document.querySelector('#header');
+      if (header) {
+        header.classList.toggle('dark-mode', isDarkMode);
+      }
+
+      const footer = document.querySelector('footer');
+      if (footer) {
+        footer.classList.toggle('dark-mode', isDarkMode);
+      }
+
+      const conteinerCards = document.querySelectorAll('#conteinerCard');
+      conteinerCards.forEach((conteinerCard) => {
+        conteinerCard.classList.toggle('dark-mode', isDarkMode);
+      });
+
+      const textCards = document.querySelectorAll('#textCard');
+      textCards.forEach((textCard) => {
+        textCard.classList.toggle('dark-mode', isDarkMode);
+      });
+
+      document.body.classList.toggle('dark-mode', isDarkMode);
+    };
+
+    applyDarkMode(darkMode);
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+  }, [darkMode, location.pathname]);
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <>
-      {!hideHeaderAndFooter && <Header />}
+      {!hideHeaderAndFooter && <Header toggleTheme={toggleTheme} darkMode={darkMode} />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<News />} />

@@ -8,6 +8,51 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw !important;
+  background-color: #F1AE5F4A;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode {
+  background-color: black;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode p,
+body.dark-mode span {
+  color: white;
+  transition: color 0.5s ease;
+}
+
+header.dark-mode
+{
+  background-color: black;
+}
+
+header.dark-mode li,
+header.dark-mode button,
+header.dark-mode #button{
+  color: white;
+  transition: color 0.5s ease;
+}
+
+footer.dark-mode {
+  background-color: black;
+}
+
+#conteinerCard.dark-mode {
+  background-color: black;
+}
+
+#conteinerCard.dark-mode a,
+#conteinerCard.dark-mode p, 
+#conteinerCard.dark-mode li,
+#conteinerCard.dark-mode label,
+#conteinerCard.dark-mode span{
+  color: #FFF;
 }
 
 code {
