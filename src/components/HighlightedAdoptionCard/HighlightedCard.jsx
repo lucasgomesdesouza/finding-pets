@@ -6,7 +6,7 @@ const HighlightedCard = ({image, title, name = true, description, info = true, a
     return (
         <div className={styles.highlighted_card }>
             <h1>{title}</h1>
-            <div className={isNewsPage ? styles.card_news : styles.card}>
+            <div className={isNewsPage ? styles.card_news : styles.card} id="conteinerCard">
                 <div>
                     <img src={image} alt={alt} />
                 </div>

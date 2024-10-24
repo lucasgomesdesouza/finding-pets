@@ -15,14 +15,43 @@ const App = () => {
   const location = useLocation();
   const hideHeaderAndFooter = location.pathname === '/sign-up';
 
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem('theme') === 'dark';
-  });
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    document.body.classList.toggle('dark-mode', darkMode);
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setDarkMode(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    const applyDarkMode = (isDarkMode) => {
+      const header = document.querySelector('#header');
+      if (header) {
+        header.classList.toggle('dark-mode', isDarkMode);
+      }
+
+      const footer = document.querySelector('footer');
+      if (footer) {
+        footer.classList.toggle('dark-mode', isDarkMode);
+      }
+
+      const conteinerCards = document.querySelectorAll('#conteinerCard');
+      conteinerCards.forEach((conteinerCard) => {
+        conteinerCard.classList.toggle('dark-mode', isDarkMode);
+      });
+
+      const textCards = document.querySelectorAll('#textCard');
+      textCards.forEach((textCard) => {
+        textCard.classList.toggle('dark-mode', isDarkMode);
+      });
+
+      document.body.classList.toggle('dark-mode', isDarkMode);
+    };
+
+    applyDarkMode(darkMode);
     localStorage.setItem('theme', darkMode ? 'dark' : 'light');
-  }, [darkMode]);
+  }, [darkMode, location.pathname]);
 
   const toggleTheme = () => {
     setDarkMode(!darkMode);

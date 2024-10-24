@@ -25,6 +25,34 @@ body.dark-mode span {
   transition: color 0.5s ease;
 }
 
+header.dark-mode
+{
+  background-color: black;
+}
+
+header.dark-mode li,
+header.dark-mode button,
+header.dark-mode #button{
+  color: white;
+  transition: color 0.5s ease;
+}
+
+footer.dark-mode {
+  background-color: black;
+}
+
+#conteinerCard.dark-mode {
+  background-color: black;
+}
+
+#conteinerCard.dark-mode a,
+#conteinerCard.dark-mode p, 
+#conteinerCard.dark-mode li,
+#conteinerCard.dark-mode label,
+#conteinerCard.dark-mode span{
+  color: #FFF;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
