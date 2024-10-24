@@ -9,11 +9,13 @@
     padding: 40px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     border: 2px solid  #FE6B1B;
     border-radius: 10px;
     background-color: #FEFDF7;
-    width: 90%;
     margin: 0 auto;
+    width: 90%;
+    align-self: center;
 }
 
 .highlighted_card .main_info{
@@ -69,10 +71,61 @@
     padding: 40px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     border: 2px solid  #FE6B1B;
     border-radius: 10px;
     background-color: #FEFDF7;
     margin: 0 auto;
     width: 80%;
-    flex-wrap: wrap;
+    align-self: center;
+}
+
+@media(max-width:425px){
+    .highlighted_card .card img{
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .card_news img{
+        width: 70vw;
+        height: 70vw;
+    }
+
+
+}
+
+@media (max-width:545px) {
+    .highlighted_card h1 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width:768px) {
+    .highlighted_card .card{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .card_news{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .highlighted_card .card img{
+        margin: 0px 0px 15px 0px;
+    }
+
+    .card_news img{
+        margin: 0px 0px 15px 0px;
+    }
+
+    .card .main_info p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .card_news .main_info p{
+        font-size: 15px;
+        line-height: 20px;
+    }
 }

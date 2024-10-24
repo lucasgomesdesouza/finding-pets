@@ -13,22 +13,27 @@ const Header = ({ toggleTheme, darkMode }) => {
         setMenuOpen(!menuOpen);
     };
 
+    // Função para fechar o menu ao clicar em um link
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <header className={styles.header} id="header">
             <div className={styles.logoContainer}>
-                <img src={logo} alt="Logo da ONG Finding Pet" className={styles.logo}/>
+                <img src={logo} alt="Logo da ONG Finding Pet" className={styles.logo} />
             </div>
-            
+
             <nav className={`${styles.navigation} ${menuOpen ? styles.active : ''}`}>
                 <ul>
-                    <li className={styles.link}><Link to="/">Início</Link></li>
-                    <li className={styles.link}><Link to="/news">Novidades</Link></li>
-                    <li className={styles.link}><Link to="/adopt">Adote</Link></li>
-                    <li className={styles.link}><Link to="/care">Cuidados</Link></li>
-                    <li className={styles.link}><Link to="/contact">Contato</Link></li>
+                    <li className={styles.link}><Link to="/" onClick={handleLinkClick}>Início</Link></li>
+                    <li className={styles.link}><Link to="/news" onClick={handleLinkClick}>Novidades</Link></li>
+                    <li className={styles.link}><Link to="/adopt" onClick={handleLinkClick}>Adote</Link></li>
+                    <li className={styles.link}><Link to="/care" onClick={handleLinkClick}>Cuidados</Link></li>
+                    <li className={styles.link}><Link to="/contact" onClick={handleLinkClick}>Contato</Link></li>
                 </ul>
             </nav>
-            
+
             {/* Botão do Ícone de Hambúrguer */}
             <button className={styles.hamburger} onClick={toggleMenu}>
                 <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} className={styles.icon} />
@@ -36,14 +41,12 @@ const Header = ({ toggleTheme, darkMode }) => {
 
             <div className={styles.icons}>
                 <Link to="/sign-up" className={styles.iconButton} id="button">
-                    <FontAwesomeIcon icon={faUser} className={styles.icon}/>
+                    <FontAwesomeIcon icon={faUser} className={styles.icon} />
                 </Link>
                 <button type="button" onClick={toggleTheme} className={styles.iconButton}>
                     <FontAwesomeIcon icon={darkMode ? faSun : faMoon} className={styles.icon} />
                 </button>
             </div>
-
-
         </header>
     );
 }

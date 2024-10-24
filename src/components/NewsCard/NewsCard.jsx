@@ -11,7 +11,7 @@ const NewsCard = () => {
         },
         {
             image: "imagem-secundaria-1-url.jpg",  
-            title: "Título da notícia secundária 1 dsadasd",
+            title: "Título da notícia secundária 1",
             alt: "Descrição da imagem secundária 1"
         },
         {
@@ -35,6 +35,7 @@ const NewsCard = () => {
         <div className={styles.more_news}>
             <h1>Mais Notícias</h1>
             <div className={styles.newsContainer}>
+                <h1>Mais Notícias</h1>
                 <div className={styles.mainNews}>
                     <img src={news[0].image} alt={news[0].alt} />
                     <div className={styles.newsOverlay}></div>

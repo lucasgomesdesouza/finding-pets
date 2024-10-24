@@ -22,6 +22,16 @@
     line-height: 1.2;
     margin-bottom: 30px;
     text-align: justify;
-    width: 800px;
+    width: 90%;
     text-align: center;
+}
+
+@media (max-width:545px) {
+    .main_description h1 {
+        font-size: 8vw;
+    }
+
+    .main_description p {
+        font-size: 15px;
+    }
 }

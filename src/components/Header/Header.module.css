@@ -82,7 +82,7 @@
 /* Estilos para telas menores que 768px */
 @media (max-width: 768px) {
     .navigation {
-        display: none; /* Oculta o menu de navegação */
+        display: flex;
         position: absolute;
         top: 70px;
         right: 0px;
@@ -90,14 +90,21 @@
         width: 100%;
         text-align: center;
         flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out; 
+        
     }
+    .navigation.active {
+        max-height: 300px; 
+        
+    }
+
     .navigation ul{
         flex-direction: column;
         gap: 0px;
     }
-    .navigation.active {
-        display: flex; /* Exibe o menu de navegação ao clicar no ícone */
-    }
+
 
     .hamburger {
         display: block; /* Exibe o ícone de hambúrguer */
