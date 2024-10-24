@@ -46,6 +46,11 @@ const App = () => {
         textCard.classList.toggle('dark-mode', isDarkMode);
       });
 
+      const inputs = document.querySelectorAll('.input');
+      inputs.forEach((input) => {
+        input.classList.toggle('dark-mode', isDarkMode);
+      });
+
       document.body.classList.toggle('dark-mode', isDarkMode);
     };
 

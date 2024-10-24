@@ -14,7 +14,7 @@ body {
 }
 
 body.dark-mode {
-  background-color: black;
+  background-color: #1C1C25;
 }
 
 body.dark-mode h1,
@@ -23,7 +23,8 @@ body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode p,
-body.dark-mode span {
+body.dark-mode span
+body.dark-mode input {
   color: white;
   transition: color 0.5s ease;
 }
@@ -33,9 +34,16 @@ header.dark-mode
   background-color: black;
 }
 
+.input.dark-mode,
+.input.dark-mode::placeholder {
+  background-color: #1C1C25;
+  color: white;
+}
+
 header.dark-mode li,
 header.dark-mode button,
-header.dark-mode #button{
+header.dark-mode #button,
+header.dark-mode nav{
   color: white;
   transition: color 0.5s ease;
 }
@@ -45,7 +53,7 @@ footer.dark-mode {
 }
 
 #conteinerCard.dark-mode {
-  background-color: black;
+  background-color: #000000;
 }
 
 #conteinerCard.dark-mode a,

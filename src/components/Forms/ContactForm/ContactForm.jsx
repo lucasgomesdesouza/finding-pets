@@ -12,28 +12,28 @@ const ContactForm = () => {
                 <form action="" className={styles.formForm}>
                     <div className={styles.formGroup}>
                         <label htmlFor="name">Nome:</label>
-                        <input type="text" id="name" placeholder="Nome do remetente"/>
+                        <input type="text" id="name" placeholder="Nome do remetente" className="input"/>
                     </div>
 
                     <div className={styles.formRow}>
                         <div className={styles.formGroup}>
                             <label htmlFor="email">Email:</label>
-                            <input type="email" id="email" placeholder="E-mail do remetente" style={{width: '355px'}}/>
+                            <input type="email" id="email" placeholder="E-mail do remetente" style={{width: '355px'}} className="input"/>
                         </div>
                         <div className={styles.formGroup}>
                             <label htmlFor="telefone">Telefone:</label>
-                            <input type="tel" id="telefone" placeholder="Número do remetente"/>
+                            <input type="tel" id="telefone" placeholder="Número do remetente" className="input"/>
                         </div>
                     </div>
 
                     <div className={styles.formGroup}>
                         <label htmlFor="assunto">Assunto:</label>
-                        <input type="text" id="assunto" placeholder="Assunto do e-mail"/>
+                        <input type="text" id="assunto" placeholder="Assunto do e-mail" className="input"/>
                     </div>
 
                     <div className={styles.formGroup}>
                         <label htmlFor="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" rows="10" placeholder="Mensagem do e-mail"></textarea>
+                        <textarea id="mensagem" rows="10" placeholder="Mensagem do e-mail" className="input"></textarea>
                     </div>
 
                     <div className={styles.formButton}>

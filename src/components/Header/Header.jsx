@@ -25,7 +25,7 @@ const Header = ({ toggleTheme, darkMode }) => {
             </div>
 
             <nav className={`${styles.navigation} ${menuOpen ? styles.active : ''}`}>
-                <ul>
+                <ul id="conteinerCard">
                     <li className={styles.link}><Link to="/" onClick={handleLinkClick}>Início</Link></li>
                     <li className={styles.link}><Link to="/news" onClick={handleLinkClick}>Novidades</Link></li>
                     <li className={styles.link}><Link to="/adopt" onClick={handleLinkClick}>Adote</Link></li>
