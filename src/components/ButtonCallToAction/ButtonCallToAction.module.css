@@ -77,3 +77,12 @@
 .adoptionButton:hover {
     background-color: #e55b16;
 }
+
+
+@media(max-width:470px){
+    .button {
+        padding: 5px 10px;
+        font-size: 14px;
+
+    }
+}

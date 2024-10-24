@@ -8,9 +8,8 @@
 
 .testimonialCard {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    align-items: start;
+    align-self: center;
     background-color: #FEFDF7;
     padding: 24px;
     border: 2px solid #FE6B1B;
@@ -24,7 +23,6 @@
 
 .testimonialPersonData{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: start;
     justify-content: start;
@@ -39,6 +37,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+
 }
   
   .petImages img {
@@ -52,7 +51,48 @@
     flex-direction: row;
 }
 
+@media(max-width:470px){
+    .petImages{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
+@media(max-width:545px){
+    .petImages{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonialSection{
+        text-align: start;
+        padding-left: 0px;
+    
+    }
+
+}
+@media(max-width:768px){
+    .testimonialCard{
+        padding: 0;
+        padding-bottom: 24px;
+    }
+    .personImage{
+        display: none;
+    }
+
+}
 @media(max-width:1475px){
+    .testimonialSection h1{
+        padding-left: 40px;
+    
+    }
+
     .testimonialCard{
        width: 90vw;
     }
@@ -63,8 +103,10 @@
     }
 
     .petImages{
-        grid-template-columns: repeat(2,1fr);
-        width: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%; /* Defina uma largura adequada para o grid */
+        max-width: 600px; /* Defina um limite de largura, se necessário */
         gap: 10px;
+        margin: 0 auto; /* Centraliza o grid horizontalmente */
     }
 }

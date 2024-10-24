@@ -13,7 +13,7 @@ const TestimonialCard = () => {
             <h1>FindingPet Lovers</h1>
         </div>
         <div className={styles.testimonialCard}>
-            <div>
+            <div className={styles.personImage}>
                 <img src={deborahPavanelli} alt="Déborah Pavanelli" />
             </div>
             <div className={styles.textImage}>

@@ -4,8 +4,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import logo from '../../assets/images/Logo.png';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", // Faz a rolagem ser suave
+        });
+    };
     return (
         <footer className={styles.footer}>
             <div className={styles.about}>
@@ -15,7 +22,7 @@ const Footer = () => {
             <div className={styles.linksSection}>
                 <h4>Institucional</h4>
                 <ul>
-                    <li>Sobre Nós</li>
+                    <li className={styles.link} onClick={scrollToTop}><Link to="/about-us">Sobre Nós</Link></li>
                     <li>FindingPet Lovers</li>
                     <li>Projetos Sociais</li>
                     <li>Unidades</li>
