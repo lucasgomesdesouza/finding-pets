@@ -9,6 +9,7 @@ const Home = () => {
         <main className="container">
             <div className="pages_content">
                 <HeroContent 
+                isAdoptPage = {false}
                 image = {goldenRetriver}
                 alt = 'Foto de um cão da raça golden retriever'
                 title = 'O seu melhor amigo com um clique!'

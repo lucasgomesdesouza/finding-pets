@@ -17,19 +17,23 @@
 .adoption_card .card{
     display: flex;
     flex-direction: column;
+
     border: 2px solid  #FE6B1B;
     border-radius: 10px;
     background-color: #FEFDF7;
     margin: 0 auto;
-    width: 240px;
+    width: 225px;
     height: auto;
     padding: 30px 30px;
+    margin-bottom: 20px;
 }
 
 .cardContainer {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap; /* Adiciona flex-wrap */
+    justify-content: center;
 }
 
 .cardContainer .card ul{
@@ -55,4 +59,12 @@
     color: white;
     font-weight: bold;
     font-size: 16px;
+}
+
+@media (max-width: 677px) {
+    .adoption_card h1{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
 }

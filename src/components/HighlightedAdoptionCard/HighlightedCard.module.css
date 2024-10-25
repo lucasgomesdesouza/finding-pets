@@ -6,7 +6,7 @@
 }
 
 .highlighted_card .card{
-    padding: 40px;
+    padding: 0px 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,7 +14,7 @@
     border-radius: 10px;
     background-color: #FEFDF7;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     align-self: center;
 }
 
@@ -28,7 +28,12 @@
 
 .highlighted_card .main_info h2{
     font-size: 2em;
-    margin-top: -40px;
+    margin-top: 0px;
+}
+
+.highlighted_card .card > h2{
+    margin-top: 0px;
+    display: none;
 }
 
 .highlighted_card .main_info p{
@@ -38,22 +43,25 @@
     text-align: justify;
     font-size: 22px;
     line-height: 35px;
+    padding-left: 20px ;
 }
 
 .highlighted_card .info{
     display: flex;
     flex-wrap: wrap;
+    white-space: nowrap;
     justify-content: center;
     align-items: center;
     text-align: start;
     font-weight: 600;
-    gap: 157px;
-    margin-bottom: -60px;
+    gap: 10vw;
     font-size: 20px;
 }
 
+
 .highlighted_card .info ul{
     list-style: none;
+    padding: 0px;
 }
 
 .highlighted_card .info li{
@@ -63,7 +71,6 @@
 .highlighted_card img{
     width: 300px;
     height: 300px;
-    margin: 0 20px 0 0;
 }
 
 
@@ -91,19 +98,38 @@
         height: 70vw;
     }
 
-
 }
+
+
 
 @media (max-width:545px) {
     .highlighted_card h1 {
         font-size: 6vw;
     }
+    .highlighted_card .info ul{
+        font-size: 4vw;
+    }
+
 }
 
 @media (max-width:768px) {
     .highlighted_card .card{
         flex-direction: column;
-        padding: 15px;
+        padding: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .highlighted_card .card > h2{ 
+        display: block;
+    }
+
+    .highlighted_card .main_info > h2{
+        display: none;
+    }
+
+    .highlighted_card .main_info p{
+        padding-left: 0px ;
     }
 
     .card_news{
@@ -111,6 +137,7 @@
         padding: 15px;
     }
 
+    
     .highlighted_card .card img{
         margin: 0px 0px 15px 0px;
     }
@@ -120,12 +147,25 @@
     }
 
     .card .main_info p{
-        font-size: 15px;
+        font-size: 16px;
         line-height: 20px;
     }
 
     .card_news .main_info p{
         font-size: 15px;
         line-height: 20px;
+    }
+}
+
+@media(max-width:913px){
+    .highlighted_card .info ul{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highlighted_card .info{
+        display: block;
+        
     }
 }

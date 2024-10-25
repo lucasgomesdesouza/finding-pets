@@ -7,6 +7,9 @@ const HighlightedCard = ({image, title, name = true, description, info = true, a
         <div className={styles.highlighted_card }>
             <h1>{title}</h1>
             <div className={isNewsPage ? styles.card_news : styles.card} id="conteinerCard">
+                <h2>
+                    {name}
+                </h2>
                 <div>
                     <img src={image} alt={alt} />
                 </div>
@@ -31,6 +34,7 @@ const HighlightedCard = ({image, title, name = true, description, info = true, a
                         </ul>
                     </div>
                     ): null }
+                    
                 </div>
             </div>
         </div>
