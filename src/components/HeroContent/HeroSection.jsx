@@ -3,7 +3,7 @@ import styles from "./HeroSection.module.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ButtonCallToAction from "../ButtonCallToAction/ButtonCallToAction";
 
-const HeroSection = ({image, title, description, alt, button = false, isAdoptPage = false}) => {
+const HeroSection = ({image, title, description, alt, button = false, isAdoptPage = true}) => {
     return (
         <div className={isAdoptPage ? styles.adopt_hero_section : styles.hero_section }>
             <div>
@@ -19,7 +19,7 @@ const HeroSection = ({image, title, description, alt, button = false, isAdoptPag
                         </React.Fragment>
                     ))}
                 </p>
-                {button == true ?(
+                {button === true ?(
                 <ButtonCallToAction icon={faArrowRight} text="ADOTE" isAdoptionPage = {false} />
                 ): null}
             </div>
