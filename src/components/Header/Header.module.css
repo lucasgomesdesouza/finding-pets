@@ -79,6 +79,7 @@
     color: #E07628;
 }
 
+
 /* Estilos para telas menores que 768px */
 @media (max-width: 768px) {
     .navigation {

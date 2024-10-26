@@ -18,7 +18,7 @@ const ContactForm = () => {
                     <div className={styles.formRow}>
                         <div className={styles.formGroup}>
                             <label htmlFor="email">Email:</label>
-                            <input type="email" id="email" placeholder="E-mail do remetente" style={{width: '355px'}} className="input"/>
+                            <input type="email" id="email" placeholder="E-mail do remetente"  className="input"/>
                         </div>
                         <div className={styles.formGroup}>
                             <label htmlFor="telefone">Telefone:</label>
@@ -69,7 +69,7 @@ const ContactForm = () => {
                     <InputInformation
                         label={"E-mail de contato:"}
                         icon={faEnvelope}
-                        text={"findingpet@adote.com.br"}
+                        text={"findingpet@adote.com"}
                     />
                     <InputInformation
                         label={"Acompanhe nossa publicações no Facebook:"}

@@ -64,6 +64,10 @@ footer.dark-mode {
   color: #FFF;
 }
 
+#conteinerCard.dark-mode a:hover{
+  color: #E07628;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

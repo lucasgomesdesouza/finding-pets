@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
 }
 
 .contactFormTitle {
@@ -32,10 +31,11 @@
   background-color: #FAF7F2;
   border-radius: 5px;
   border: 1px solid #FE6B1B;
+
 }
 
 .formForm {
-  width: 781px;
+  width: 97.5%;
 }
 
 .formGroup {
@@ -60,6 +60,11 @@ textarea {
   border-radius: 4px;
   font-size: 1rem;
   outline: none;
+
+}
+
+input[type="email"]{
+  width: 90%;
 }
 
 input[type="text"]:focus,
@@ -87,6 +92,7 @@ textarea {
   justify-content: flex-end;
   margin-top: 20px;
   flex-wrap: wrap;
+  margin-right: -20px;
 }
 
 .formInfos {
@@ -119,4 +125,92 @@ textarea {
 
 .formInformationContainer label{
   margin: 10px 0px 10px 0;
+}
+
+
+
+@media(max-width:890px){
+  .formContainer {
+    width: 600px;
+  }
+
+
+  .formInformationContainer{
+    width: 600px;
+
+  }
+
+  .formForm {
+    width: 96.5%;
+  }
+}
+
+
+
+@media(max-width:690px){
+  .formContainer {
+    width: 460px;
+  }
+
+
+  .formInformationContainer{
+    width: 460px;
+
+  }
+
+  .formRow {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+  }
+
+  input[type="email"]{
+    width: 100%;
+  }
+
+  .formForm {
+    width: 95.5%;
+  }
+}
+
+@media(max-width:550px){
+  .formContainer {
+    width: 80vw;
+  }
+
+
+  .formInformationContainer{
+    width: 80vw;
+
+  }
+
+  .formRow {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+  }
+
+  input[type="email"]{
+    width: 100%;
+  }
+
+  .formForm {
+    width: 95.5%;
+  }
+
+  .formTitle{
+    font-size: 22px;
+    color: black;
+  }
+}
+
+@media(max-width:375px){
+
+
+  .formTitle{
+    font-size: 6vw;
+    color: black;
+  }
 }

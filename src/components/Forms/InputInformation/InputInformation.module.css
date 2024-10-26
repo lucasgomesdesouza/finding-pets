@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
 }
 
 .label {
@@ -29,4 +30,23 @@
 .text {
     font-size: 16px;
     font-weight: bold;
+}
+
+
+@media (max-width: 890px) {
+    .inputContainer {
+        width: 575px;
+    }
+}
+
+@media (max-width: 690px) {
+    .inputContainer {
+        width: 435px;
+    }
+}
+
+@media (max-width: 550px) {
+    .inputContainer {
+        width: 75vw;
+    }
 }
