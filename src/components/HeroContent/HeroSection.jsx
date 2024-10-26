@@ -9,7 +9,7 @@ const HeroSection = ({image, title, description, alt, button = false, isAdoptPag
             <div>
                 <img src={image} alt={alt} />
             </div>
-            <div className={styles.heroContentMobile}>
+            <div className={isAdoptPage? styles.adoptHeroContentMobile : styles.heroContentMobile}>
                 <h2>{title}</h2>
                 <p>
                     {description.split('\n').map((line, index) => (

@@ -76,8 +76,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 25px;
-        max-width: 100%;
+        margin-left: 36px;
+        width: 100%;
+    }
+
+    .adopt_hero_section .adoptHeroContentMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 38px;
+        width: 100%;
     }
 
     .hero_section h2 {
@@ -86,15 +95,17 @@
     
     .adopt_hero_section h2 {
         text-align: center;
+        width: 110%;
     }
 
-    .hero_section p {
+    .hero_section .heroContentMobile p {
         justify-content: center;
-        text-align: center !important;
+        text-align: center ;
     }
     
-    .adopt_hero_section p {
+    .adopt_hero_section .adoptHeroContentMobile p {
         text-align: center;
+        width: 115%;
     }
 
 }
