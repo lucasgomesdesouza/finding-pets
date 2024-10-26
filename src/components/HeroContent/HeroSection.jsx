@@ -3,13 +3,13 @@ import styles from "./HeroSection.module.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ButtonCallToAction from "../ButtonCallToAction/ButtonCallToAction";
 
-const HeroSection = ({image, title, description, alt, button = false, isAdoptPage = true}) => {
+const HeroSection = ({image, title, description, alt, button = false, isAdoptPage = false}) => {
     return (
         <div className={isAdoptPage ? styles.adopt_hero_section : styles.hero_section }>
             <div>
                 <img src={image} alt={alt} />
             </div>
-            <div>
+            <div className={styles.heroContentMobile}>
                 <h2>{title}</h2>
                 <p>
                     {description.split('\n').map((line, index) => (

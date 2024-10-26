@@ -86,3 +86,9 @@
 
     }
 }
+
+@media(max-width:880px){
+    .button {
+        align-self: center;
+    }
+}

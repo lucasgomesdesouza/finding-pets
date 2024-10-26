@@ -79,6 +79,12 @@
     color: #E07628;
 }
 
+@media (max-width: 425px) {
+    .header {
+        padding: 16px 5px;
+
+    }
+}
 
 /* Estilos para telas menores que 768px */
 @media (max-width: 768px) {
@@ -117,5 +123,6 @@
         padding: 16px 0;
     }
 }
+
 
 

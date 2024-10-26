@@ -72,7 +72,7 @@ const ContactForm = () => {
                         text={"findingpet@adote.com"}
                     />
                     <InputInformation
-                        label={"Acompanhe nossa publicações no Facebook:"}
+                        label={"Acompanhe nossas publicações no Facebook:"}
                         icon={faFacebookF}
                         text={"Finding Pet - São Paulo"}
                     />
