@@ -130,6 +130,7 @@
 
 
     .hamburger {
+        margin-left: -15px;
         display: block; /* Exibe o ícone de hambúrguer */
         
     }
