@@ -10,7 +10,7 @@ const Footer = () => {
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: "smooth", // Faz a rolagem ser suave
+            behavior: "smooth",
         });
     };
     return (

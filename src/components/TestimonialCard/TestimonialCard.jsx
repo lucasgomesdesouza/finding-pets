@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Déborah Pavanelli",
     location: "São Paulo - SP",
-    text: "Acabei de adotar dois cachorros, e isso tem sido uma das melhores decisões da minha vida! São o Tisco e o Beto, e desde o momento em que eles chegaram em casa, trouxeram tanta alegria e amor. Ver a felicidade nos olhos deles ao correr pelo quintal ou se aconchegar no sofá é simplesmente indescritível. Tudo isso só foi possível graças ao FindingPet. O site tornou o processo de adoção super simples e acessível.",
+    text: "Acabei de adotar dois cachorros, e isso tem sido uma das melhores decisões da minha vida! São o Tisco e o  Beto, e desde o momento em que eles chegaram em casa, trouxe tanta alegria e amor. Ver a felicidade nos olhos deles ao correr pelo quintal ou se aconchegar no sofá é simplesmente indescritível.\nTudo isso só foi possível graças ao FindingPet. O site tornou o processo de adoção super simples e acessível. Além de ter uma interface amigável, eles cuidam de cada detalhe para garantir que os animais encontrem lares amorosos. Foi incrível ver como eles se importam com cada pet e com cada pessoa que busca adotar.\nSe você está pensando em ter um animal de estimação, recomendo fortemente que visite o FindingPet. Além de ganhar um novo amigo, você estará dando uma nova chance a um animal que precisa. Tisco e Beto mudaram minha vida de uma forma tão positiva, e tenho certeza de que, com a ajuda do FindingPet, você também pode viver essa experiência maravilhosa!",
     images: [pinscherRelatoUm, pinscherRelatoDois, pinscherRelatoTres, pinscherRelatoQuatro]
   },
   {
@@ -73,10 +73,12 @@ const TestimonialCard = () => {
             </div>
             <p>{currentTestimonial.text}</p>
           </div>
-          <div className={styles.petImages}>
-            {currentTestimonial.images.map((image, index) => (
-              <img key={index} src={image} alt={`Foto ${index + 1} dos pets adotados`} />
-            ))}
+          <div className={styles.petImagesContainer}>
+            <div className={styles.petImages}>
+              {currentTestimonial.images.map((image, index) => (
+                <img key={index} src={image} alt={`Foto ${index + 1} dos pets adotados`} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

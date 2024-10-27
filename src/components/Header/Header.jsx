@@ -13,7 +13,6 @@ const Header = ({ toggleTheme, darkMode }) => {
         setMenuOpen(!menuOpen);
     };
 
-    // Função para fechar o menu ao clicar em um link
     const handleLinkClick = () => {
         setMenuOpen(false);
     };
@@ -34,7 +33,6 @@ const Header = ({ toggleTheme, darkMode }) => {
                 </ul>
             </nav>
 
-            {/* Botão do Ícone de Hambúrguer */}
             <button className={styles.hamburger} onClick={toggleMenu}>
                 <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} className={styles.icon} />
             </button>

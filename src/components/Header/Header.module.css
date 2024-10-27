@@ -65,7 +65,7 @@
     color: #E07628;
 }
 
-/* Estilo para o ícone de hambúrguer */
+
 .hamburger {
     display: none;
     background: none;
@@ -103,7 +103,6 @@
     }
 }
 
-/* Estilos para telas menores que 768px */
 @media (max-width: 768px) {
     .navigation {
         display: flex;
@@ -131,7 +130,7 @@
 
     .hamburger {
         margin-left: -15px;
-        display: block; /* Exibe o ícone de hambúrguer */
+        display: block; 
         
     }
 

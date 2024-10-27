@@ -36,19 +36,19 @@
     margin: 0 auto;
     }
 
-    .button{
-        background-color: #FE6B1B;
-        border: none;
-        padding: 10px 30px;
-        border-radius: 10px;
-        color: white;
-        font-size: 18px;
-    }
+  .button{
+      background-color: #FE6B1B;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 10px;
+      color: white;
+      font-size: 18px;
+  }
 
-    .button:hover{
-        background-color: #ce5616;
-        transition: 0.3s;
-    }
+  .button:hover{
+      background-color: #ce5616;
+      transition: 0.3s;
+  }
   
   .testimonialText {
     padding: 0px 16px 0px 16px;
@@ -65,14 +65,22 @@
   .testimonialText p {
     font-size: 16px;
     color: #000;
+    white-space: pre-line;
   }
-  
+
+  .petImagesContainer{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  }
+
   .petImages {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  
+
   .petImages img {
     height: auto;
     object-fit: cover;
@@ -145,5 +153,6 @@
       gap: 10px;
       margin: 0 auto;
     }
+  
   }
   
