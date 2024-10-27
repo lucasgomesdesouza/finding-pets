@@ -116,6 +116,13 @@
       display: none;
     }
   }
+
+  @media (max-width: 1000px) {
+    .textImage {
+      display: flex;
+      flex-direction: column !important;
+    }
+  }
   
   @media (max-width: 1475px) {
     .testimonialSection h1 {
@@ -128,7 +135,7 @@
   
     .textImage {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
     }
   
     .petImages {
