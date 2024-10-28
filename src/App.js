@@ -26,41 +26,33 @@ const App = () => {
 
   useEffect(() => {
     const applyDarkMode = (isDarkMode) => {
-      const header = document.querySelector('#header');
-      if (header) {
-        header.classList.toggle('dark-mode', isDarkMode);
-      }
-
-      const footer = document.querySelector('footer');
-      if (footer) {
-        footer.classList.toggle('dark-mode', isDarkMode);
-      }
-
-      const conteinerCards = document.querySelectorAll('#conteinerCard');
-      conteinerCards.forEach((conteinerCard) => {
-        conteinerCard.classList.toggle('dark-mode', isDarkMode);
-      });
-
-      const textCards = document.querySelectorAll('#textCard');
-      textCards.forEach((textCard) => {
-        textCard.classList.toggle('dark-mode', isDarkMode);
-      });
-
-      const inputs = document.querySelectorAll('.input');
-      inputs.forEach((input) => {
-        input.classList.toggle('dark-mode', isDarkMode);
-      });
-
       document.body.classList.toggle('dark-mode', isDarkMode);
+  
+      const elementsToToggle = [
+        '#header',
+        'footer',
+        '#conteinerCard',
+        '#textCard',
+        '.input'
+      ];
+  
+      elementsToToggle.forEach((selector) => {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach((element) => {
+          element.classList.toggle('dark-mode', isDarkMode);
+        });
+      });
     };
-
+  
     applyDarkMode(darkMode);
+  
     localStorage.setItem('theme', darkMode ? 'dark' : 'light');
   }, [darkMode, location.pathname]);
-
+  
   const toggleTheme = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prevMode) => !prevMode);
   };
+  
 
   return (
     <>

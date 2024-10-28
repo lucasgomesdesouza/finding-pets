@@ -32,6 +32,27 @@ const testimonials = [
 const TestimonialCard = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    console.log(savedTheme);
+    if (savedTheme === 'dark') {
+      setDarkMode(true);
+    }
+
+    const handleStorageChange = (event) => {
+      if (event.key === 'theme') {
+        setDarkMode(event.newValue === 'dark');
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
 
   const goToNextTestimonial = () => {
     setFade(false);
@@ -61,7 +82,10 @@ const TestimonialCard = () => {
       <div>
         <h1>FindingPet Lovers</h1>
       </div>
-      <div className={`${styles.testimonialCard}  ${fade ? styles.fadeIn : styles.fadeOut} `} id="conteinerCard">
+      <div
+        className={`${styles.testimonialCard} ${fade ? styles.fadeIn : styles.fadeOut} ${currentTestimonial.class} ${darkMode ? 'dark-mode' : ''} testemunialCard`}
+        id="conteinerCard"
+      >
         <div className={styles.personImage}>
           <img src={deborahPavanelli} alt={currentTestimonial.name} />
         </div>
@@ -83,13 +107,13 @@ const TestimonialCard = () => {
         </div>
       </div>
       <div className={styles.buttonsContainer}>
-            <button className={styles.button} onClick={goToPreviousTestimonial}>
-                <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
-            <button className={styles.button}>
-                <FontAwesomeIcon icon={faChevronRight} onClick={goToNextTestimonial}/>
-            </button>
-        </div>
+        <button className={styles.button} onClick={goToPreviousTestimonial}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+        <button className={styles.button} onClick={goToNextTestimonial}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
+      </div>
     </div>
   );
 };
