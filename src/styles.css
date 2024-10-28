@@ -52,15 +52,15 @@ footer.dark-mode {
   background-color: black;
 }
 
-#conteinerCard.dark-mode {
+.dark-mode #conteinerCard {
   background-color: #000000;
 }
 
-#conteinerCard.dark-mode a,
-#conteinerCard.dark-mode p, 
-#conteinerCard.dark-mode li,
-#conteinerCard.dark-mode label,
-#conteinerCard.dark-mode span{
+.dark-mode #conteinerCard a,
+.dark-mode #conteinerCard p, 
+.dark-mode #conteinerCard li,
+.dark-mode #conteinerCard label,
+.dark-mode #conteinerCard span{
   color: #FFF;
 }
 
