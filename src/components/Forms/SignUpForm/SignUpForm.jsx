@@ -9,27 +9,41 @@ const SignUpForm = () => {
     return (
         <div className={styles.fullScreenContainer}>
             <div className={styles.container}>
+                
                 <div className={styles.loginSection}>
-                    <h1 className={styles.loginSectionTitle}>Bem-vindo de volta</h1>
-                    <p className={styles.loginSectionDescription}>Para continuar conectado conosco faça o login</p>
+                    <h1 className={styles.loginSectionTitle}>Bem-vindo de volta!</h1>
+                    <p className={styles.loginSectionDescription}>Para continuar conectado conosco, faça o login:</p>
+                    <form action="" className={styles.formForm}>
+                        <div className={styles.formGroup}>
+                            <input type="email" id="email" placeholder="E-Mail" required/>
+                        </div>
+                        <div className={styles.formGroup}>
+                            <input type="password" id="senha" placeholder="Senha" required/>
+                        </div>
+                    </form>
                     <Link to={'/'} className={styles.link}>
                         <ButtonCallToAction icon={faArrowRight} text="Logar" />
                     </Link>
                 </div>
+
                 <div className={styles.signupSection}>
                     <h2 className={styles.loginSectionTitle}>Crie uma conta</h2>
-                    <div className={styles.socialIcons}>
-                        <FontAwesomeIcon icon={faFacebook} className={styles.socialIcon} />
-                        <FontAwesomeIcon icon={faGoogle} className={styles.socialIcon} />
-                        <FontAwesomeIcon icon={faLinkedin} className={styles.socialIcon} />
-                    </div>
-                    <p className={styles.orText}>Ou use seu e-mail para registro</p>
+                    
                     <form action="" className={styles.formForm}>
                         <div className={styles.formGroup}>
                             <input type="text" id="name" placeholder="Nome" required/>
                         </div>
                         <div className={styles.formGroup}>
-                            <input type="email" id="email" placeholder="Email" required/>
+                            <input type="text" id="cpf" placeholder="CPF" required/>
+                        </div>
+                        <div className={styles.formGroup}>
+                            <input type="text" id="state" placeholder="Estado" required/>
+                        </div>
+                        <div className={styles.formGroup}>
+                            <input type="text" id="adress" placeholder="Endereço" required/>
+                        </div>
+                        <div className={styles.formGroup}>
+                            <input type="email" id="email" placeholder="E-Mail" required/>
                         </div>
                         <div className={styles.formGroup}>
                             <input type="password" id="senha" placeholder="Senha" required/>

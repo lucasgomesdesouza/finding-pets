@@ -4,6 +4,7 @@ import CardSection from "../components/CardSection/CardSection";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import goldenRetriver from "../assets/images/goldenzinho_ownt.png";
 
+
 const Home = () => {
     return (
         <main className="container">

@@ -20,13 +20,13 @@ const Header = ({ toggleTheme, darkMode }) => {
     return (
         <header className={styles.header} id="header">
             <div className={styles.logoContainer}>
-                <img src={logo} alt="Logo da ONG Finding Pet" className={styles.logo} />
+                <img src={logo} alt="Logo da Finding Pet" className={styles.logo} />
             </div>
 
             <nav className={`${styles.navigation} ${menuOpen ? styles.active : ''}`}>
                 <ul id="conteinerCard">
                     <li className={styles.link}><Link to="/" onClick={handleLinkClick}>Início</Link></li>
-                    <li className={styles.link}><Link to="/news" onClick={handleLinkClick}>Novidades</Link></li>
+                    <li className={styles.link}><Link to="/news" onClick={handleLinkClick}>Notícias</Link></li>
                     <li className={styles.link}><Link to="/adopt" onClick={handleLinkClick}>Adote</Link></li>
                     <li className={styles.link}><Link to="/care" onClick={handleLinkClick}>Cuidados</Link></li>
                     <li className={styles.link}><Link to="/contact" onClick={handleLinkClick}>Contato</Link></li>

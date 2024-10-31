@@ -47,24 +47,6 @@
     text-align: center;
 }
 
-.socialIcons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.socialIcon {
-    color: #a59383;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.orText {
-    text-align: center;
-    color: #999;
-}
-
 .link {
     text-decoration: none;
 }
